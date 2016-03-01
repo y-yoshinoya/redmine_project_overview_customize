@@ -1,0 +1,3 @@
+<% unless @project.hide_members? %>
+  <%= render file: Rails.root.join("app/views/projects/_members_box.html.erb") %>
+<% end %>

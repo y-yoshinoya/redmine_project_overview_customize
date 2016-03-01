@@ -1,0 +1,5 @@
+<p>
+  <label for="hide_members"><%= t("projects.hide_members") %></label>
+  <%= hidden_field_tag "project[hide_members]", false %>
+  <%= check_box_tag "project[hide_members]", true, @project.hide_members?, id: "hide_members" %>
+</p>

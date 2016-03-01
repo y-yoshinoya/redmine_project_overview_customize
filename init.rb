@@ -1,3 +1,6 @@
+require_dependency "project_overview_customize/project_listener"
+require_dependency "project_overview_customize/project_patch"
+
 Redmine::Plugin.register :redmine_project_overview_customize do
   name 'Redmine Project Overview Customize plugin'
   author 'Yuki Yoshinoya  '
