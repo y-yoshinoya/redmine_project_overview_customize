@@ -10,7 +10,7 @@ module ProjectOverviewCustomize
   end
 end
 
-ActionDispatch::Reloader.to_prepare do
+ActiveSupport::Reloader.to_prepare do
   unless Project.included_modules.include?(ProjectOverviewCustomize::ProjectPatch)
     Project.send(:include, ProjectOverviewCustomize::ProjectPatch)
   end
